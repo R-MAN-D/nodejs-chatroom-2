@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1" />
+    <title>XyChat | Room</title>
+
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" /-->
+    <link rel="stylesheet" href="/public_html/font-awesome-4.4.0/css/font-awesome.min.css" />
+    <link href="/css/chat-pub.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="/js/chat-pub.js"></script>
+</head>
+<body>
+
+<div id="entrance">
+    <form id="login-form">
+        <p>Select your best Username then hit "Enter"</p>
+        <input id="username" type="text" />
+    </form>
+</div>
+
+<div id="chat-pub" style="display: none">
+    <ul id="window-pubc" style="float: left; width: 70%"></ul>
+
+
+    <div id="window-ol" style="float: right; width: 28%; height: 93vh; border-left: 3px solid #EFEFEF"></div>
+
+    <div style="clear: both"></div>
+
+    <form id="chat-pub-form">
+
+        <input id="m" autocomplete="off" placeholder='Type then hit "Enter"' />
+
+        <!--a href="" style="color: #FFF; float: right; cursor: pointer; text-decoration: none"><i class="fa fa-sign-out fa-3x"></i></a>
+        <a href="" style="color: #FFF; float: right; cursor: pointer; text-decoration: none; margin-right: 6px"><i class="fa fa-navicon fa-3x"></i></a-->
+
+    </form>
+</div>
+
+</body>
+</html>
